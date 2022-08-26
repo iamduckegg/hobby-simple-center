@@ -50,7 +50,7 @@ public class ResultVO<T> implements Serializable {
 	}
 
 	public static<T> ResultVO<T> success (String msg, Object data){
-		return new ResultVO().setMsg(msg).setData(data);
+		return new ResultVO().setCode(200).setMsg(msg).setData(data);
 	}
 
 	public static<T> ResultVO<T> success (Integer code, String msg, Object data){
