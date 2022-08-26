@@ -42,9 +42,9 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     cache-enabled: true
     #关闭sql日志
-#    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
     #开启sql日志
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 pagehelper:
   # helper-dialect：需要进行分页的数据库，如果不配置会默认进行分析
@@ -60,3 +60,9 @@ pagehelper:
   # 用于从对象中根据属性名取值
   #  默认值为 countSql
   params: count=countsql
+  banner: false
+
+logging:
+  level:
+    com.xkcoding: info
+    com.xkcoding.orm.mybatis.plus.mapper: trace
