@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import net.zxy.center.common.utils.ListUtil;
-import net.zxy.center.common.utils.PageUtils;
+import net.zxy.center.common.utils.PageUtil;
 import net.zxy.center.dao.core.UserMapper;
 import net.zxy.center.po.core.UserPO;
 import net.zxy.center.service.core.IUserService;
@@ -53,7 +53,7 @@ public class UserServiceImpl implements IUserService {
 		PageHelper.startPage(vo.getPageNum(), vo.getPageSize(), true);
 		List<UserPO> userPOS = userMapper.selectUserList(vo);
 		PageInfo<UserPO> pagePO = new PageInfo<>(userPOS);
-		PageInfo<UserRespVO> pageVO = PageUtils.convert(pagePO, UserRespVO.class);
+		PageInfo<UserRespVO> pageVO = PageUtil.convert(pagePO, UserRespVO.class);
 		return pageVO;
 	}
 

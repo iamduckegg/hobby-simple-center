@@ -14,7 +14,7 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
  * @Author zx
  * @Date 2021/1/21 0021
  **/
-public class CodeUtils {
+public class CodeUtil {
 
 	public static void main(String[] args) {
 		// 代码生成器

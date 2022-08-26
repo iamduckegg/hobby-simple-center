@@ -9,7 +9,7 @@ import org.springframework.beans.BeanUtils;
  * @Author zx
  * @Date 2022/8/25
  **/
-public class PageUtils {
+public class PageUtil {
 	/**
 	 * pageInfo泛型转换
 	 *
