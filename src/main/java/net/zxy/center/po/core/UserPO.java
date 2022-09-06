@@ -39,5 +39,9 @@ public class UserPO extends BasePO {
      */
     private String mobile;
 
+    /**
+     * 状态：0-无效，1-有效
+     */
+    private Integer status;
 
 }

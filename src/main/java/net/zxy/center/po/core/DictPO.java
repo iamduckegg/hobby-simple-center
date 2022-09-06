@@ -25,10 +25,10 @@ public class DictPO extends BasePO {
     private static final long serialVersionUID = 1L;
 
     /**
-     * 主键
+     * 字典ID
      */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
+    @TableId(value = "dict_id", type = IdType.AUTO)
+    private Long dictId;
 
     /**
      * 排序
@@ -60,6 +60,10 @@ public class DictPO extends BasePO {
      */
     private String remark;
 
+    /**
+     * 状态：0-无效，1-有效
+     */
+    private Integer status;
 
 
 }

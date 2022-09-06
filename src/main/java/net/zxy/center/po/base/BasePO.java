@@ -16,10 +16,6 @@ public class BasePO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * 状态：0-无效，1-有效
-	 */
-	private Integer status;
 
 	/**
 	 * 创建时间
